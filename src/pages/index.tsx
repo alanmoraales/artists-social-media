@@ -22,9 +22,6 @@ const Home: NextPage = () => {
           <Then>
             <Grid gap={4} width="fit-content">
               <Heading size="md">Hi there @{user?.username}!</Heading>
-              <Button onClick={logoutUser} id="logout-button">
-                Logout
-              </Button>
             </Grid>
           </Then>
           <Else>
