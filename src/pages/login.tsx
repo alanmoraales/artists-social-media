@@ -62,7 +62,12 @@ const Login = () => {
     <Grid minHeight="100vh" p={8} placeItems="center">
       <Grid gap={8}>
         <Heading size="md">Login</Heading>
-        <Grid as="form" gap={8} onSubmit={handleSubmit(onSubmit)}>
+        <Grid
+          as="form"
+          gap={8}
+          onSubmit={handleSubmit(onSubmit)}
+          id="login-form"
+        >
           <Grid gap={4}>
             <FormControl isInvalid={Boolean(errors.username)}>
               <FormLabel htmlFor="username">Username</FormLabel>
